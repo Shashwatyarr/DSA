@@ -1,7 +1,7 @@
 class Solution {
 public:
     vector<vector<int>> dp;
-    int find(string s,string t,int i,int j){
+    int find(string& s,string& t,int i,int j){
         if(i<0) return j+1;
         if(j<0) return i+1;
         if(dp[i][j]!=-1) return dp[i][j];

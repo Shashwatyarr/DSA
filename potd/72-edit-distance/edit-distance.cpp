@@ -14,9 +14,7 @@ public:
 
     int minDistance(string s, string t) {
         int n=s.size(),m=t.size();
-        if(n==0 || m==0) return max(n,m);
         dp.resize(n+1,vector<int>(m+1,-1));
-        if(s==t) return 0;
         return find(s,t,n-1,m-1);
     }
 };

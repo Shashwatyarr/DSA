@@ -18,7 +18,6 @@ public:
         for(auto it:s){
             mpp[it]=0;
         }
-        int ans=find(s,mpp,0);
-        return (ans-1+MOD)%MOD;
+        return (find(s,mpp,0)-1+MOD)%MOD;
     }
 };
